@@ -8,10 +8,18 @@ module.exports = {
       chainId: 1337
     },
    
-    mumbai: {
-      url: "https://red-yolo-county.matic-testnet.discover.quiknode.pro/735b95c35f376be2cc1e32e5da540cef149494cd/", 
+    // for testnet
+    testnet: {
+      url: "https://eth.bd.evmos.dev:8545",
       accounts: [process.env.PRIVATE_KEY],
+      // allowUnlimitedContractSize: true
     },
+
+        // for mainnet
+        'optimism': {
+          url: "https://eth.bd.evmos.org:8545",
+          accounts: [process.env.PRIVATE_KEY],
+        },
 
   },
   solidity: {

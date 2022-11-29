@@ -59,7 +59,7 @@ const MintCharacter = () => {
 
   const sendTxToBlockchain = async (metaData) => {
     try {
-      setTxStatus("connecting to Polygon Mumbai Blockchain.");
+      setTxStatus("connecting to EVMOS Testnet Blockchain.");
       const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
       const provider = new ethers.providers.Web3Provider(connection);
@@ -75,7 +75,7 @@ const MintCharacter = () => {
       await mintNFTTx.wait();
       return mintNFTTx;
     } catch (error) {
-      setErrorMessage("Failed to send tx to Polygon Mumbai.");
+      setErrorMessage("Failed to send tx to EVMOS Testnet.");
       console.log(error);
     }
   };
@@ -86,8 +86,8 @@ const MintCharacter = () => {
     console.log("image ipfs path is", imgViewString);
     setImageView(imgViewString);
     setMetaDataURl(getIPFSGatewayURL(metaData.url));
-    setTxURL(`https://mumbai.polygonscan.com/tx/${mintNFTTx.hash}`);
-    setTxStatus("Talent registration was successfully!");
+    setTxURL(`https://evm.evmos.dev/tx/${mintNFTTx.hash}`);
+    setTxStatus("Charcter registration was successfully!");
     console.log("Preview details completed");
   };
 
@@ -137,7 +137,7 @@ const MintCharacter = () => {
             onChange={(e) => updateFormInput({ ...formInput, hp: e.target.value })}
           />
           <input
-            placeholder="Asset Price in Matic"
+            placeholder="Asset Price in EVMOS"
             className="mt-5 border rounded p-4 text-xl"
             onChange={(e) => updateFormInput({ ...formInput, price: e.target.value })}
           />
@@ -162,8 +162,6 @@ const MintCharacter = () => {
               title="Ebook "
               src={imageView}
               alt="NFT preview"
-              frameBorder="0"
-              scrolling="auto"
               height="50%"
               width="100%"
             />

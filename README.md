@@ -1,8 +1,9 @@
-# Soldier Ant Colony
+# Soldier Ant Colony Evmos Covalent #OneMillionWallets
+
 ### An epic web3 game that mimics the bio-inspration of soldier-ant for food hunt. Players finds it easy to play and earn as well as collaborating to make game characters.
 
 ## Introduction
-This project was built as part of the 2022 Hackathon. The project is submitted as a GameFi (NFT / Meterverse) Track project. 
+This project was built as part of the 2022 Hackathon. The project is submitted as a GameFi (NFT / Meterverse) Track project. Soldier Ant Colony EVMOS / Covalent One million Wallet Hackathon
 
 ## Description
 
@@ -13,9 +14,9 @@ Try running some of the following tasks:
 
 Fork this repo using
 
-git clone https://github.com/holyaustin/soldier-ant-colony.git
+git clone https://github.com/holyaustin/Soldier-Ant-Colony-EVMOS.git
 
-cd soldier-ant-colony
+cd Soldier-Ant-Colony-EVMOS
 
 npx hardhat node
 
@@ -24,25 +25,18 @@ npx hardhat run scripts/deploy.js --network localhost
 npm run build
 
 ## How to deploy to Polygon Mumbai  blockchain, update hardhat.config
-npx hardhat run scripts/deploy.js --network mumbai
+npx hardhat run scripts/deploy.js --network testnet
 
-Game contract address: 0x84f8371Ce8AC1Bb8a2DA18C951b68DEadF68861B
+Game contract address: 0xe078fe7A93017F8e18c1C52E79632d0B94c56c26
 
-Game Mumbai Explorer Url: https://mumbai.polygonscan.com/address/0x84f8371Ce8AC1Bb8a2DA18C951b68DEadF68861B
+Game Explorer Url: https://evm.evmos.dev/address/0xe078fe7A93017F8e18c1C52E79632d0B94c56c26
 
-Marketplace contract address: 0x827034961e8545f41c4fbE789C0aCc403Cd57840
+https://evm.evmos.dev/address/0xa6d6f4556b022c0c7051d62e071c0acece5a1228
 
-Marketplace Mumbai Explorer Url: https://mumbai.polygonscan.com/address/0x827034961e8545f41c4fbE789C0aCc403Cd57840
+Marketplace contract address: 0x8D36089AB6eFdB3FEb2D8Ed42F7eC80f3c6d2b11
 
-ChainLink Automations
-https://automation.chain.link/mumbai/43261894346530949533092616931341821180927010940935092033652627243623558033302
+Marketplace Explorer Url: https://evm.evmos.dev/address/0x8D36089AB6eFdB3FEb2D8Ed42F7eC80f3c6d2b11
 
-https://automation.chain.link/mumbai/66917563105230795377420118538253557671397727604044084015799933012400452674696
-
-https://automation.chain.link/mumbai/75827409707677329829712821423665505239498509533533755332611578763980380744750
-
-
-ChainLink Automation Rewards contract: 0x0813d4a158d06784FDB48323344896B2B1aa0F85
 
 ## How to play
 Final project deployed to Mumbai Testnet
@@ -51,7 +45,8 @@ Final project deployed to Mumbai Testnet
 3. Mint a character from our Marketplace
 4. Enagege in the quest to get the lucky food slide
 5. You win if you get the food before your life decreases to Zero
-6. You earn a reward (An NFT to your wallet) <Token reward coming soon>
+6. You earn a reward (An NFT to your wallet) 
+7. <Token reward coming soon>
    
 
 ## Protocols Used in this Project
@@ -59,13 +54,11 @@ Chainlink (VRF and Automation)
 
 IPFS/Filecoin (NFT.Storage)
 
-Polygon 
-
-QuickNode RPC (Mumbai)
+EVMOS Testnet (9000)
 
 Sequence Wallet Integration
 
-Spheron and Vercel
+Vercel
 
 
 ## Tools Used in this Project

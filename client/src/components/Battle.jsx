@@ -1,8 +1,8 @@
 /* eslint-disable no-tabs */
 import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { ethers } from "ethers";
 import "../App.css";
-// import twitterLogo from "../assets/twitter-logo.svg";
 import SelectCharacter from "./SelectCharacter";
 import myEpicGame from "../utils/MyEpicGame.json";
 import Arena from "./Arena";
@@ -21,6 +21,7 @@ import { epicGameAddress as CONTRACT_ADDRESS } from "../../config";
 
 const App = () => {
   // State
+  const navigate = useNavigate();
   const [currentAccount, setCurrentAccount] = useState(null);
   const [characterNFT, setCharacterNFT] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -133,8 +134,9 @@ const App = () => {
 
   const checkNetwork = async () => {
     try {
-      if (window.ethereum.networkVersion !== "80001") {
-        alert("Please connect to Mumbai Testnet!");
+      if (window.ethereum.networkVersion !== "9000") {
+        alert("Please connect to EVMOS Testnet!");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
@@ -198,7 +200,9 @@ const App = () => {
         </video>
          */}
         <div className="header-container">
-          <p className="header gradient-text">⚔️ Soldier Ant Colony⚔️</p>
+          <Link to="/">
+            <p className="header gradient-text">⚔️ Soldier Ant Colony⚔️</p>
+          </Link>
           <p className="sub-text">Quest for food ... Only lucky colonies grab the food!</p>
           <br />
           {renderContent()}
@@ -220,7 +224,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`developed by @${TWITTER_HANDLE} Sponsored by IPFS, Polygon, Fluence, Spheron, Sequence and chainlink`}
+          >{`developed by @${TWITTER_HANDLE} Sponsored by IPFS, Polygon, Spheron, Sequence and chainlink`}
           </a>
 
         </div>

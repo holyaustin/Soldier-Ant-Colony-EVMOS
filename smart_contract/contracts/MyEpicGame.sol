@@ -113,7 +113,7 @@ BigBoss public bigBoss;
   // Users would be able to hit this function and get their NFT based on the
   // characterId they send in!
   function mintCharacterNFT(uint _characterIndex) external payable {
-    uint256 _price = 1 * 10**15;
+    uint256 _price = 1 * 10**14;
     require(msg.value >= _price, "Not enough Money to paid");
     // Get current tokenId (starts at 1 since we incremented in the constructor).
     uint256 newItemId = _tokenIds.current();

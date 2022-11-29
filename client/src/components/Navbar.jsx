@@ -17,17 +17,19 @@ const Navbar = () => {
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="sm:w-8 md:w-18 lg:w-14  cursor-pointer" />
       </div>
-      <ul className="text-white lg:text-2xl md:flex hidden  items-center flex-initial">
+      <ul className="text-white justify-center lg:text-2xl md:flex hidden  items-center flex-initial">
         <Link to="/">Home</Link>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
         <Link to="/marketplace">MarketPlace</Link>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-        <Link to="/create">collaborate</Link>
+        <Link to="/create">Collaborate</Link>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <Link to="/NFTdashboard">NFT-Dashboard</Link>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 
-        <li className="text-black font-semibold bg-green-300 py-5 px-20 mx-8 sm:mx-3 sm:py-2 sm:px-8 rounded-full cursor-pointer hover:bg-green-800 hover:text-white ">
-          <a href="https://quickswap.exchange/#/swap" target="_blank" rel="noreferrer">
-            Swap / Buy Matic Here
+        <li className="justify-center text-black font-semibold bg-green-300 py-5 px-20 mx-8 sm:mx-3 sm:py-2 sm:px-8 rounded-full cursor-pointer hover:bg-green-800 hover:text-white ">
+          <a href="https://app.diffusion.fi/#/swap" target="_blank" rel="noreferrer">
+            Swap / Buy EVMOS Tokens Here
           </a>
         </li>
 

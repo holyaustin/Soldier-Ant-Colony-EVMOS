@@ -18,12 +18,12 @@ npx hardhat run scripts/deploy.js --network localhost
 npm run build
 
 ## How to deploy to Polygon Mumbai  blockchain, update hardhat.config
-npx hardhat run scripts/deploy.js --network mumbai
+npx hardhat run scripts/deploy.js --network testnet
 Game contract address: 
-Game Mumbai Explorer Url: 
+Game  Explorer Url: 
 
 Marketplace contract address: 0xd14FfA08a9256BcA4A5597fCfD9D3303bACC9893
-Marketplace Mumbai Explorer Url: https://mumbai.polygonscan.com/address/0xd14FfA08a9256BcA4A5597fCfD9D3303bACC9893
+
 
 
 ## How to play

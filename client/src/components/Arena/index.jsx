@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import axios from "axios";
-import { CONTRACT_ADDRESS, transformCharacterData } from "../../constants";
+import { transformCharacterData } from "../../constants";
+import { epicGameAddress } from "../../../config";
 import myEpicGame from "../../utils/MyEpicGame.json";
 import "./Arena.css";
 import LoadingIndicator from "../LoadingIndicator";
@@ -51,7 +52,7 @@ const Arena = ({ characterNFT, setCharacterNFT }) => {
       const provider = new ethers.providers.Web3Provider(ethereum);
       const signer = provider.getSigner();
       const gameContract = new ethers.Contract(
-        CONTRACT_ADDRESS,
+        epicGameAddress,
         myEpicGame.abi,
         signer
       );
