@@ -39,8 +39,8 @@ Marketplace Explorer Url: https://evm.evmos.dev/address/0x8D36089AB6eFdB3FEb2D8E
 
 
 ## How to play
-Final project deployed to Mumbai Testnet
-1. Switch your wallet network to Mumbai Testnet
+Final project deployed to EVMOS Testnet
+1. Switch your wallet network to EVMOS Testnet
 2. Connect you wallet
 3. Mint a character from our Marketplace
 4. Enagege in the quest to get the lucky food slide
@@ -74,13 +74,11 @@ Video Editor
 
 
 ## Demo / Live Links
-Live Dapp - https://soldier-ant-colony-dvtsd.spheron.app
+Live Dapp - https://soldier-ant-colony-evmos.vercel.app
 
-https://soldier-ant-colony-r8hz7.spheron.app
+https://soldier-ant-colony-evmos.vercel.app/
 
-https://soldier-ant-colony.vercel.app/
-
-Youtube Url: https://youtu.be/-N1akNGWuR8
+Youtube Url: https://youtu.be/n1wAF_KxVkU
 
 
 ## Connect with me and send me a mail
